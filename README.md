@@ -41,7 +41,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [View live site](https://github.com/brodaremi/weather-app/)
+- Live Site URL: [View live site](https://brodaremi.github.io/Weather-app/)
 
 ## My process
 
