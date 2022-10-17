@@ -41,8 +41,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [](https://github.com/brodaremi/weather-app)
-- Live Site URL: [](https://github.com/brodaremi/weather-app/)
+- Solution URL: ![](https://github.com/brodaremi/weather-app)
+- Live Site URL: ![](https://github.com/brodaremi/weather-app/)
 
 ## My process
 
@@ -50,12 +50,12 @@ Users should be able to:
 
 - Semantic HTML5 markup
 - Google font
-- Favicon:  [](https://favicon.io)
+- Favicon:  ![](https://favicon.io)
 - CSS custom properties
 - Flexbox
 - Vanilla JavaScript
-- openweather.org API:  [](https://opeanweather.org)
-- sources.unsplash API:  [](https://sources.unsplash.com)
+- openweather.org API:  ![](https://opeanweather.org)
+- sources.unsplash API:  ![](https://sources.unsplash.com)
 
 
 ## Author
