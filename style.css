@@ -1,0 +1,568 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Space Grotesk', sans-serif;
+    padding: 0;
+}
+
+body{
+    margin:0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(images/a.jpg), url(images/b.jpg), url(images/c.jpg), url(images/d.jpg), url(images/e.jpg),url(images/f.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    background: linear-gradient(to top,rgba(108, 37, 174, 0.8), rgba(35, 8, 61, 0.2));
+    width: 25rem;
+    padding: 2rem;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.form{
+    width: max-content;
+    margin: 0 auto;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+input{
+    background-color: rgb(0, 0, 0, 0.6);
+    line-height: 2.4;
+    color: white;
+    border-top-left-radius: 0.4rem;
+    border-top-right-radius: 0.4rem;
+    padding-left: 1rem;
+    width: 15rem;
+    margin-bottom: 1rem;
+    border-color: white;
+    border-style:groove;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+input::placeholder{
+    color: rgb(255, 255, 255)
+}
+button{
+    cursor: pointer;
+    margin-left: 0.5rem;
+    border-radius: 0.3rem;
+    color: rgb(18, 17, 17, 0.5);
+    border: none;
+    padding: 0.5rem;
+}
+button:hover{
+    border-radius: 0.5rem;
+    width: 3.8rem;
+    background-color: rgb(6, 6, 6, 0.7);
+    color: white;
+}
+.weather{
+    font-family: 'Lexend Deca', sans-serif;
+    margin: 0.2rem 0;
+    background-color: rgb(83, 93, 93, 0.2);
+    padding: 1rem;
+    font-weight: 400;
+    color: white;
+    border-radius: 1rem;
+    text-align: left;
+    height: 80%;
+    margin-top: 1rem;
+}
+.weather .place{
+    font-weight: 800;
+    font-size: 2rem;
+    margin-bottom: 5rem;
+    font-family: 'Lexend Deca', sans-serif;
+}
+.weather h3{
+    padding-top: 1rem;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    margin-bottom: 7rem;
+}
+.weather .wind{
+    padding-bottom: 1rem;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+}
+.diagram{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+}
+.diagram .description{
+    align-items: center;
+    margin: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 50%;
+    font-size: 1.2rem;
+    font-weight: 400;
+    height: 2rem;
+}
+.diagram .icons{
+    background-image: url();
+    width: 30%;
+    height: 30%;
+    margin: 0 auto;
+}
+.temperature{
+    margin: 1rem 0;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+}
+.humidity{
+    margin: 1rem 0;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+}
+.timeDate{
+    font-family: 'Lexend Deca', sans-serif;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.time{
+    font-family: 'Lexend Deca', sans-serif;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.times{
+    font-family: 'Lexend Deca', sans-serif;
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    padding-left: 2rem;
+}
+.dates{
+    font-family: 'Lexend Deca', sans-serif;
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    padding-left: 2rem;
+}
+span{
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+}
+.move{
+    font-family: 'Lexend Deca', sans-serif;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    margin-bottom: 3rem;
+    margin-left: 3rem;
+    background-color: rgba(52, 69, 85, 0.4);
+    border-radius: 1rem;
+    width: 30%;
+}
+
+.move .temperature1{
+    padding-left: 1.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Lexend Deca', sans-serif;
+}
+.move .placeName{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: auto;
+}
+.move .placeTemp{
+    font-family: 'Lexend Deca', sans-serif;
+    display: flex;
+    flex-direction: row;
+}
+.move .placeTemp .degree{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 1230px) {
+    .times{
+        padding-left: 1rem;
+    }
+    .dates{
+        padding-left: 1rem;
+    }
+}
+@media screen and (max-width: 1155px) {
+    .times{
+        padding-left: 0.5rem;
+    }
+    .dates{
+        padding-left: 0.5rem;
+    }
+    .move .temperature1{
+        padding-left: 1rem;
+    }
+}
+@media screen and (max-width: 1110px) {
+    .times{
+        padding-left: 0;
+    }
+    .dates{
+        padding-left: 0.2rem;
+    }
+    .move{
+        width: 33%;
+    }
+}
+@media screen and (max-width: 1090px) {
+    .times{
+        padding-left: 0;
+    }
+    .dates{
+        padding-left: 0;
+    }
+    span{
+        padding-left: 0.2rem;
+        padding-right: 0.2rem;
+    }
+    .move{
+        width: 33%;
+    }
+}
+@media screen and (max-width: 1030px) {
+    .times{
+        width: 20%;
+        padding-left: 0.2rem;
+        font-size: 1rem;
+    }
+    .dates{
+        width: 60%;
+        padding-left: 1.5rem;
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .move .temperature1{
+        padding-left: 0;
+    }
+
+}
+@media screen and (max-width: 1000px) {
+    .move .temperature1{
+        font-weight: bold;
+        font-size: 2rem;
+    }
+    .move{
+        width: 33%;
+    }
+    
+}
+
+@media screen and (max-width: 900px) {
+    .move .temperature1{
+        font-weight: bold;
+        font-size: 1.8rem;
+    }
+    .times{
+        padding-left: 0.2rem;
+    }
+    .dates{
+        padding-left: 2rem;
+    }
+}
+@media screen and (max-width: 820px) {
+    .times{
+        padding-left: 0;
+    }
+    .dates{
+        padding-left: 2rem;
+    }
+    .move .placeName{
+        padding-left: 0;
+    }
+    .move{
+        width: 35%;
+    }
+}
+@media screen and (max-width: 780px) {
+    .times{
+        padding-left: 0.3rem;
+    }
+    .move{
+        width: 38%;
+    }
+    .container{
+        width: 23rem;
+    }
+    input{
+        width: 12rem;
+    }
+}
+@media screen and (max-width: 715px) {
+    .move{
+        width: 40%;
+        margin-bottom: 2rem;
+        margin-left: 2rem;
+    }
+    .container{
+        width: 21rem;
+    }
+}
+@media screen and (max-width: 670px) {
+    .times{
+        padding-left: 0.1rem;
+    }
+    .move{
+        width: 42%;
+    }
+    .container{
+        width: 20rem;
+    }
+}
+@media screen and (max-width: 670px) {
+    .timeDate{
+        flex-direction: column;
+    }
+    .times{
+        margin: 0 auto;
+    }
+    .dates{
+        margin: 0 auto;
+        padding: 0.2rem;
+    }
+    .description{
+        font-size: larger;
+    }
+}
+@media screen and (max-width: 630px) {
+    .move{
+        width: 40%;
+        margin-bottom: 1.5rem;
+        margin-left: 1.5rem;
+    }
+    .move .placeName{
+        padding-left: 0.3rem;
+    }
+    .move .temperature1{
+        font-weight: bold;
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width: 600px) {
+    .move .placeTemp{
+        flex-direction: column;
+    }
+    .move .temperature1{
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 575px) {
+    .container{
+        width: 18rem;
+    }
+    .dates{
+        padding-right: 10rem;
+    }
+    button{
+        margin-left: 0;
+    }
+}
+@media screen and (max-width: 530px) {
+    .container{
+        width: 18rem;
+    }
+    .move{
+        margin-bottom: 1.2rem;
+        margin-left: 1.2rem;
+    }
+    .dates{
+        padding-right: 12rem;
+    }
+    .times{
+        padding-right: 5rem;
+    }
+}
+@media screen and (max-width: 500px) {
+    body{
+        width: fit-content;
+        background-size: cover;
+        align-items: center;
+    }
+    .main{
+        width: 100%;
+    }
+    .weather h3{
+        padding-top: 0.2rem;
+        font-family: 'Lexend Deca', sans-serif;
+        font-weight: 400;
+        font-size: 1rem;
+        margin-bottom: 3rem;
+    }
+    .container{
+        width: 100%;
+        padding: 0.5rem;
+        border-radius: 0;
+        height: 70%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: 10.5rem 0;
+        background: linear-gradient(to top,rgba(108, 37, 174, 0.0), rgba(35, 8, 61, 0.0));
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+    }
+    .move{
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        height: max-content;
+        color: white;
+        margin: 0;
+        background-color: rgba(30, 40, 50, 0.5);
+        border-radius: 0.5rem;
+        width: 100%;
+        padding: 0.5rem;
+    }
+    .move .placeTemp{
+        flex-direction: row;
+        width: max-content;
+        margin: 0 auto;
+        border: none;
+        padding-top: 0.8rem;
+        padding-bottom: 0;
+        align-items: center;
+    }
+    .move .temperature1{
+        padding-left: 0;
+        font-size: 2.3rem;
+        font-weight: bolder;
+        margin: 0;
+    }
+    .move .placeName{
+        padding-left: 1rem;
+        padding-top: 0.5rem;
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin: 0;
+    }
+    .move .description{
+        font-family: 'Lexend Deca', sans-serif;
+       margin: 0;
+       text-align: center;
+       width: max-content;
+       font-size: small;
+       padding: 0;
+       padding-top: 0.5rem;
+       font-weight:bold;
+       padding-left: 0.5rem;
+    }
+    .diagram .icons{
+        width: 30%;
+        height: 30%;
+        padding: 0;
+        margin: 0;
+     }
+    .timeDate{
+        align-self: center;
+        flex-direction: row;
+        text-align: center;
+        margin: 0 auto;
+        padding: 0;
+        width: max-content;
+        margin-bottom: 0.5rem;
+    }
+    .diagram{
+        width: max-content;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 0;
+        align-self: center;
+        align-items: center;
+        padding-bottom: 1rem;
+    }
+    .dates{
+        font-family: 'Lexend Deca', sans-serif;
+        width: max-content;
+        margin: 0;
+        justify-content: center;
+        padding: 0;
+        font-size: medium;
+        font-weight: bold;
+    }
+    .times{
+        font-family: 'Lexend Deca', sans-serif;
+        width: max-content;
+        padding: 0;
+        font-size: medium;
+        margin: 0;
+        font-weight: bold;
+        padding-right: 1.5rem;
+    }
+
+    .form{
+        width: 75%;
+        margin: 1rem auto;
+        padding: 0;
+        padding-top: 1rem;
+    }
+    form{
+        width: 100%;
+    }
+    label{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        
+    }
+    button{
+        width: 20%;
+        font-size: 0.7rem;
+        line-height: 1;
+        text-align: center;
+        padding: 0.2rem;
+    }
+    input{
+        width: 100%;
+        margin: auto;
+        font-size: small;
+        line-height: 2;
+        margin-right: 1rem;
+    }
+    .weather{
+        margin: 0 auto;
+        padding: 1rem;
+        width: 80%;
+        height: max-content;
+        background: linear-gradient(to top,rgba(108, 37, 174, 0.8), rgba(35, 8, 61, 0.2));
+    }
+    .weather .place{
+        margin-bottom: 2rem;
+        font-weight: 600;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 375px){
+    .weather{
+        margin: 0 auto;
+        padding: 1rem;
+        width: 90%;
+        height: max-content;
+
+    }
+}

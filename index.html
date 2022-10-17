@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Spngpace+Grotesk:wght@500&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App</title>
+</head>
+<body>
+    <main class="main">
+        <div class="container">
+            <div class="form">
+                <form action="">
+                    <label for="input">
+                        <input type="text" autocomplete="off" name="text" id="search" placeholder="Search city"/>
+                        <button class="button">Submit</button>
+                    </label>
+                </form>
+            </div>
+            <div class="weather">
+                <hr>
+                <h1 class="place">The Weather in -------</h1>
+                <hr>
+                <h3>Weather Details</h3>
+                <p class="temperature">Temp: __ <span class="degree">&deg;C</span></p>
+                <p class="humidity">Humidity: __%</p>
+                <p class="wind">Wind Speed: __km/h</p>
+                <hr>
+            </div>          
+            </div>
+        </div>
+        <div class="move">
+            <div class="placeTemp">
+                <p class="temperature1" >--<span class="degree">&deg;C</span></p>
+                <p class="placeName">--------</p>
+            </div>
+            <div class="diagram">
+                <p class="description">----</p>
+                <img src="" alt="" class="icons">
+            </div>
+            <div class="timeDate">
+                <div class="times">
+                    <p class="hrs">00</p><span>:</span><p class="mins">00</p><span></span><p class="day"></p>  
+                </div>
+                <div class="dates">
+                    <p class="weekday"></p><span></span><p class="date"></p><span>,</span><p class="month"></p><span>/</span><p class="year"></p>
+                </div>
+    
+            </div>
+            
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
